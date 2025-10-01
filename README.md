@@ -7,21 +7,21 @@ A **NestJS + MongoDB** microservice architecture for ingesting and processing hi
 ```
 ┌─────────────┐         HTTP          ┌──────────────────┐
 │   Client    │ ───POST /events──────▶│  Ingest Service  │
-└─────────────┘                        │   (Port 3000)    │
-                                       └──────────────────┘
-                                                │
-                                                │ HTTP POST
-                                                ▼
-                                       ┌──────────────────┐
-                                       │ Processor Service│
-                                       │   (Port 3001)    │
-                                       └──────────────────┘
-                                                │
-                                                ▼
-                                       ┌──────────────────┐
-                                       │    MongoDB       │
-                                       │   (Port 27017)   │
-                                       └──────────────────┘
+└─────────────┘                       │   (Port 3000)    │
+                                      └──────────────────┘
+                                              │
+                                              │ HTTP POST
+                                              ▼
+                                      ┌──────────────────┐
+                                      │ Processor Service│
+                                      │   (Port 3001)    │
+                                      └──────────────────┘
+                                               │
+                                               ▼
+                                      ┌──────────────────┐
+                                      │    MongoDB       │
+                                      │   (Port 27017)   │
+                                      └──────────────────┘
 ```
 
 ### Services
