@@ -80,7 +80,7 @@ A **NestJS + MongoDB** microservice architecture for ingesting and processing hi
 
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone https://github.com/gustavodsf/medical-integration
 cd medical-integration
 
 # Start all services
